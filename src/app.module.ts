@@ -7,6 +7,7 @@ import { UsersModule } from './users/users.module';
 import { AuthModule } from './auth/auth.module';
 import { AdminModule } from './admin/admin.module';
 import { AcademicsModule } from './academics/academics.module';
+import { FinancialsModule } from './financials/financials.module';
 
 @Module({
   imports: [
@@ -28,7 +29,8 @@ import { AcademicsModule } from './academics/academics.module';
     UsersModule, // <-- Add this
     AuthModule,
     AdminModule,
-    AcademicsModule, // <-- Add this
+    AcademicsModule,
+    FinancialsModule, // <-- Add this
   ],
   controllers: [AppController],
   providers: [AppService],
